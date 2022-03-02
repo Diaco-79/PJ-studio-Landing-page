@@ -1,0 +1,14 @@
+@mixin center($direction) {
+  display: flex;
+  flex-flow: nowrap $direction;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  align-items: $align;
+  flex-flow: nowrap $direction;
+  justify-content: $justify;
+}
